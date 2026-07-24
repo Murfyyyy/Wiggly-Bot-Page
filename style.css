@@ -1,0 +1,48 @@
+body {
+    background-image: url(Media/paper_background.jpg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    gap: 1rem;
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 30px;
+    text-align: center;
+}
+
+#div1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 590px;
+}
+#div2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: auto;
+}
+#div-text {
+    position: absolute;
+}
+
+#discord-link {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: rgb(165, 24, 24);
+    font-size: 105px;
+    text-decoration: none;
+}
+#discord-link:hover {
+    color: rgb(255, 95, 95);
+    transform: scale(1.2);
+}
