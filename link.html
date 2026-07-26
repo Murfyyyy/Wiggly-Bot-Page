@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Link</title>
+    <style>
+        #div1 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 423px;
+        }
+
+        #discord-link {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            color: rgb(95, 13, 13);
+            font-size: 105px;
+            text-decoration: none;
+        }
+
+        #discord-link:hover {
+            color: rgb(203, 35, 35);
+            transform: scale(1.2);
+        }
+        /* main */
+    </style>
+    <link rel="stylesheet" href="default.css">
+    <script src="page-script.js" defer></script>
+</head>
+
+<body>
+    <audio id="click-sound" src="Media/Audio/click_sound.wav"></audio>
+    <audio id="page-sound" src="Media/Audio/pageturn.wav"></audio>
+    
+    <div class="menu-bar">
+        <ul class="horizontal">
+            <li><a href="index.html" class="page">Início</a></li>
+            <li><a href="link.html" class="page"><strong>Link</strong></a></li>
+            <li><a href="info.html" class="page">Sobre</a></li>
+            <li><a href="server.html" class="page">Servidores</a></li>
+        </ul>
+    </div>
+    <hr>
+    <div id="div1">
+        <a href="https://discord.com/oauth2/authorize?client_id=1529624968441233408&permissions=70369246506166&integration_type=0&scope=bot" id="discord-link" target="_blank">!link!</a>
+        <img src="Media/Image/wumpus.gif" alt="Wumpus" id="wumpus" width="340" height="300">
+    </div>
+
+    <script>
+        const link = document.getElementById('discord-link');
+        const sound = document.getElementById('click-sound');
+
+        link.addEventListener('click', () => {
+            sound.currentTime = 0;
+            sound.play();
+        });
+    </script>
+</body>
+</html>
