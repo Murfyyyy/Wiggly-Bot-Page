@@ -1,2 +1,2 @@
 # Wiggly-Bot-Page
-wiggly bot yes yes yes!
+a discord bot that is the best than others (bc yes)
